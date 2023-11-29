@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>API_KEY</key>
+	<string>AIzaSyB7GppHIe2TIObIDEWbH6PvdkUA5qs5xXg</string>
+	<key>GCM_SENDER_ID</key>
+	<string>133172534187</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>cibertec.edu.pe.Salud</string>
+	<key>PROJECT_ID</key>
+	<string>salud-b265e</string>
+	<key>STORAGE_BUCKET</key>
+	<string>salud-b265e.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:133172534187:ios:4cd335970e62cb801550ee</string>
+</dict>
+</plist>
