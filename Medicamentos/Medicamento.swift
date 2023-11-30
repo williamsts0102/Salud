@@ -11,10 +11,10 @@ struct Medicamento: Codable {
     var id: Int
     var nombre: String
     var descripcion: String
-    //var imagen: Images
+    var imagen: String
     var unidades: String
-    var precio: Double
-    var id_categoria: Int
+    var precio: String
+    var id_categoria: String
 
 }
 

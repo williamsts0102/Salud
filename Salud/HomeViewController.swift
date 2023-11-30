@@ -21,6 +21,7 @@ class HomeViewController: UIViewController {
     @IBOutlet weak var emailLabel: UILabel!
     @IBOutlet weak var providerLabel: UILabel!
     @IBOutlet weak var closeSessionButton: UIButton!
+    @IBOutlet weak var tiendaButton: UIButton!
     
     private let email:String
     private let provider: ProviderType
@@ -80,14 +81,8 @@ class HomeViewController: UIViewController {
         }
     }
     
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    @IBAction func tiendaButtonAction(_ sender: UIButton) {
+        self.navigationController?.pushViewController(TiendaViewController(), animated: true)
     }
-    */
-
+    
 }

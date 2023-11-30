@@ -21,6 +21,13 @@
 		B745D6862B174BCD0001CBAE /* RegisterUserStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = B745D6852B174BCD0001CBAE /* RegisterUserStruct.swift */; };
 		B745D6882B174E010001CBAE /* SuccesRegisterUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = B745D6872B174E010001CBAE /* SuccesRegisterUser.swift */; };
 		B7B698722B16A34700E52F26 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B7B698712B16A34700E52F26 /* GoogleService-Info.plist */; };
+		B7EAC5212B180A9A0025240F /* PerfilViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B7EAC5202B180A9A0025240F /* PerfilViewController.xib */; };
+		B7EAC5232B180AD80025240F /* PerfilViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7EAC5222B180AD80025240F /* PerfilViewController.swift */; };
+		B7EAC5252B1817310025240F /* TiendaViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B7EAC5242B1817310025240F /* TiendaViewController.xib */; };
+		B7EAC5272B1818010025240F /* TiendaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7EAC5262B1818010025240F /* TiendaViewController.swift */; };
+		B7EAC52A2B1841C80025240F /* MyCustomCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7EAC5282B1841C80025240F /* MyCustomCollectionViewCell.swift */; };
+		B7EAC52B2B1841C80025240F /* MyCustomCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B7EAC5292B1841C80025240F /* MyCustomCollectionViewCell.xib */; };
+		B7EAC52D2B187BFD0025240F /* SuccessListMedicamento.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7EAC52C2B187BFD0025240F /* SuccessListMedicamento.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +49,13 @@
 		B745D6852B174BCD0001CBAE /* RegisterUserStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterUserStruct.swift; sourceTree = "<group>"; };
 		B745D6872B174E010001CBAE /* SuccesRegisterUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuccesRegisterUser.swift; sourceTree = "<group>"; };
 		B7B698712B16A34700E52F26 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		B7EAC5202B180A9A0025240F /* PerfilViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PerfilViewController.xib; sourceTree = "<group>"; };
+		B7EAC5222B180AD80025240F /* PerfilViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerfilViewController.swift; sourceTree = "<group>"; };
+		B7EAC5242B1817310025240F /* TiendaViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TiendaViewController.xib; sourceTree = "<group>"; };
+		B7EAC5262B1818010025240F /* TiendaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TiendaViewController.swift; sourceTree = "<group>"; };
+		B7EAC5282B1841C80025240F /* MyCustomCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCustomCollectionViewCell.swift; sourceTree = "<group>"; };
+		B7EAC5292B1841C80025240F /* MyCustomCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyCustomCollectionViewCell.xib; sourceTree = "<group>"; };
+		B7EAC52C2B187BFD0025240F /* SuccessListMedicamento.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuccessListMedicamento.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +113,12 @@
 				B743C3AC2B15533A002A4A38 /* Salud.xcdatamodeld */,
 				B743C3BC2B156A59002A4A38 /* HomeViewController.swift */,
 				B743C3BE2B158E40002A4A38 /* HomeViewController.xib */,
+				B7EAC5202B180A9A0025240F /* PerfilViewController.xib */,
+				B7EAC5222B180AD80025240F /* PerfilViewController.swift */,
+				B7EAC5242B1817310025240F /* TiendaViewController.xib */,
+				B7EAC5262B1818010025240F /* TiendaViewController.swift */,
+				B7EAC5282B1841C80025240F /* MyCustomCollectionViewCell.swift */,
+				B7EAC5292B1841C80025240F /* MyCustomCollectionViewCell.xib */,
 			);
 			path = Salud;
 			sourceTree = "<group>";
@@ -123,6 +143,7 @@
 			isa = PBXGroup;
 			children = (
 				B745D6872B174E010001CBAE /* SuccesRegisterUser.swift */,
+				B7EAC52C2B187BFD0025240F /* SuccessListMedicamento.swift */,
 			);
 			path = Response;
 			sourceTree = "<group>";
@@ -200,7 +221,10 @@
 				B743C3BF2B158E40002A4A38 /* HomeViewController.xib in Resources */,
 				B7B698722B16A34700E52F26 /* GoogleService-Info.plist in Resources */,
 				B743C3B02B15533B002A4A38 /* Assets.xcassets in Resources */,
+				B7EAC5212B180A9A0025240F /* PerfilViewController.xib in Resources */,
+				B7EAC5252B1817310025240F /* TiendaViewController.xib in Resources */,
 				B743C3AB2B15533A002A4A38 /* Main.storyboard in Resources */,
+				B7EAC52B2B1841C80025240F /* MyCustomCollectionViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -256,11 +280,15 @@
 				B745D6862B174BCD0001CBAE /* RegisterUserStruct.swift in Sources */,
 				B743C3BD2B156A59002A4A38 /* HomeViewController.swift in Sources */,
 				B743C3A82B15533A002A4A38 /* AuthViewController.swift in Sources */,
+				B7EAC5232B180AD80025240F /* PerfilViewController.swift in Sources */,
 				B743C3A42B15533A002A4A38 /* AppDelegate.swift in Sources */,
 				B743C3A62B15533A002A4A38 /* SceneDelegate.swift in Sources */,
 				B745D6882B174E010001CBAE /* SuccesRegisterUser.swift in Sources */,
 				B745D6812B16F8840001CBAE /* Medicamento.swift in Sources */,
+				B7EAC52A2B1841C80025240F /* MyCustomCollectionViewCell.swift in Sources */,
 				B743C3AE2B15533A002A4A38 /* Salud.xcdatamodeld in Sources */,
+				B7EAC52D2B187BFD0025240F /* SuccessListMedicamento.swift in Sources */,
+				B7EAC5272B1818010025240F /* TiendaViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
