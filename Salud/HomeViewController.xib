@@ -12,6 +12,7 @@
             <connections>
                 <outlet property="closeSessionButton" destination="Yh7-mD-6eH" id="tXm-q7-wtS"/>
                 <outlet property="emailLabel" destination="Fw9-Ph-r7N" id="fvS-g5-u8T"/>
+                <outlet property="perfilButton" destination="Ijr-Qk-1wr" id="F2S-J2-HvK"/>
                 <outlet property="providerLabel" destination="SJh-d7-sbw" id="QsL-X2-cjq"/>
                 <outlet property="tiendaButton" destination="VZy-Ma-6r4" id="Q40-Ce-L9T"/>
                 <outlet property="view" destination="iN0-l3-epB" id="oS3-FP-8hG"/>
@@ -41,6 +42,10 @@
                             <rect key="frame" x="0.0" y="96" width="361" height="40"/>
                             <state key="normal" title="Button"/>
                             <buttonConfiguration key="configuration" style="plain" title="Perfil"/>
+                            <connections>
+                                <action selector="perfilButtonAction:" destination="-1" eventType="touchUpInside" id="xVI-mo-Sfz"/>
+                                <action selector="tiendaButtonAction:" destination="-1" eventType="touchUpInside" id="to6-es-2Yp"/>
+                            </connections>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VZy-Ma-6r4">
                             <rect key="frame" x="0.0" y="144" width="361" height="40"/>

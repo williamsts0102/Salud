@@ -22,6 +22,7 @@ class HomeViewController: UIViewController {
     @IBOutlet weak var providerLabel: UILabel!
     @IBOutlet weak var closeSessionButton: UIButton!
     @IBOutlet weak var tiendaButton: UIButton!
+    @IBOutlet weak var perfilButton: UIButton!
     
     private let email:String
     private let provider: ProviderType
@@ -83,6 +84,10 @@ class HomeViewController: UIViewController {
     
     @IBAction func tiendaButtonAction(_ sender: UIButton) {
         self.navigationController?.pushViewController(TiendaViewController(), animated: true)
+    }
+    
+    @IBAction func perfilButtonAction(_ sender: UIButton) {
+        self.navigationController?.pushViewController(PerfilViewController(), animated: true)
     }
     
 }

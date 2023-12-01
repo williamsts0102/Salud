@@ -10,7 +10,11 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PerfilViewController" customModule="Salud" customModuleProvider="target">
             <connections>
-                <outlet property="view" destination="iN0-l3-epB" id="Rab-ZI-xzU"/>
+                <outlet property="apellidoTextField" destination="rQj-To-kzu" id="5U6-j9-9oU"/>
+                <outlet property="emailTextField" destination="I17-Qb-NyQ" id="b36-fH-eZH"/>
+                <outlet property="nombreTextField" destination="X0S-Eh-rcL" id="mGu-h7-kWX"/>
+                <outlet property="telefonoTextField" destination="v1r-KT-Dfa" id="KGx-UX-oJn"/>
+                <outlet property="view" destination="iN0-l3-epB" id="hXG-nj-LB8"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
@@ -41,13 +45,6 @@
                 </label>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v1r-KT-Dfa">
                     <rect key="frame" x="175" y="410" width="42" height="21"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                    <nil key="textColor"/>
-                    <nil key="highlightedColor"/>
-                </label>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EmU-Km-S3m">
-                    <rect key="frame" x="175" y="515" width="42" height="21"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <nil key="textColor"/>
