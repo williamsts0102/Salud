@@ -9,21 +9,30 @@ import UIKit
 
 class MedicamentoInfoViewController: UIViewController {
 
+    @IBOutlet weak var imagenImageView: UIImageView!
+    @IBOutlet weak var nombreLabel: UILabel!
+    @IBOutlet weak var descripcionLabel: UILabel!
+    @IBOutlet weak var precioLabel: UILabel!
+    @IBOutlet weak var categoriaLabel: UILabel!
+    @IBOutlet weak var unidadesLabel: UILabel!
+    
+    @IBOutlet weak var contraEntregaButton: UIButton!
+    @IBOutlet weak var enLineaButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        
     }
 
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    
+    
+    @IBAction func contraEntregaButtonAction(_ sender: UIButton) {
     }
-    */
+    
+    
+    @IBAction func enLineaButtonAction(_ sender: UIButton) {
+    }
+    
 
 }
