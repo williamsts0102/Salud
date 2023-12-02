@@ -109,6 +109,40 @@ extension TiendaViewController: UICollectionViewDelegate{
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         print("\(indexPath.section) -> \(indexPath.row) \(myData[indexPath.row])")
         
+        let medicamento: Medicamento
+        if !filteredData.isEmpty {
+            medicamento = filteredData[indexPath.row]
+        } else {
+            medicamento = myData[indexPath.row]
+        }
+
+        // Inicializa la vista MedicamentoInfoViewController
+        let medicamentoInfoVC = MedicamentoInfoViewController()
+
+        // Pasa los datos al MedicamentoInfoViewController
+        medicamentoInfoVC.imagen = medicamento.imagen // Puedes asignar la imagen del medicamento aquí
+        medicamentoInfoVC.nombre = medicamento.nombre
+        medicamentoInfoVC.descripcion = medicamento.descripcion
+        medicamentoInfoVC.precio = medicamento.precio
+        medicamentoInfoVC.categoria = medicamento.id_categoria
+        medicamentoInfoVC.unidades = medicamento.unidades
+
+        // Realiza la transición a MedicamentoInfoViewController
+        self.navigationController?.pushViewController(medicamentoInfoVC, animated: true)
+
+        /*
+        let medicamentoVC = MedicamentoInfoViewController()
+
+        // Configura los valores en la vista de edición
+        medicamentoVC.imagen = user?.nombre
+        medicamentoVC.nombre = myData[indexPath.row]?.nombre
+        medicamentoVC.descripcion = user?.apellido
+        medicamentoVC.unidades = user?.telefono
+        medicamentoVC.precio = user?.email
+        medicamentoVC.categoria = user?.email
+
+        self.navigationController?.pushViewController(editPerfilVC, animated:true)
+         */
     }
 }
 

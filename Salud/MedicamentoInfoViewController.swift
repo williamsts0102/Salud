@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Kingfisher
 
 class MedicamentoInfoViewController: UIViewController {
 
@@ -19,10 +20,25 @@ class MedicamentoInfoViewController: UIViewController {
     @IBOutlet weak var contraEntregaButton: UIButton!
     @IBOutlet weak var enLineaButton: UIButton!
     
+    var imagen: String?
+    var nombre: String?
+    var descripcion: String?
+    var precio: String?
+    var categoria: String?
+    var unidades: String?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        
+        //imagenImageView.image = imagen
+        if let imageURL = URL(string: imagen ?? "") {
+                    imagenImageView.kf.setImage(with: imageURL)
+        }
+        nombreLabel.text = nombre
+        descripcionLabel.text = descripcion
+        precioLabel.text = precio
+        categoriaLabel.text = categoria
+        unidadesLabel.text = unidades
     }
 
     
@@ -34,5 +50,4 @@ class MedicamentoInfoViewController: UIViewController {
     @IBAction func enLineaButtonAction(_ sender: UIButton) {
     }
     
-
 }
