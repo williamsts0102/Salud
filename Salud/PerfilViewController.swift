@@ -16,8 +16,16 @@ class PerfilViewController: UIViewController {
     @IBOutlet weak var telefonoTextField: UILabel!
     
     private var user: SuccessGetUser?
-        private let email: GetUserStruct = GetUserStruct(email: "prueba@gmail.com") // Aquí debes poner el correo estático que quieras consultar
+    private var email: GetUserStruct!
 
+    init(emailHome: String) {
+        super.init(nibName: nil, bundle: nil)
+        self.email = GetUserStruct(email: emailHome)
+    }
+
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
