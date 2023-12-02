@@ -14,6 +14,7 @@ class PerfilViewController: UIViewController {
     @IBOutlet weak var nombreTextField: UILabel!
     @IBOutlet weak var apellidoTextField: UILabel!
     @IBOutlet weak var telefonoTextField: UILabel!
+    @IBOutlet weak var editarButton: UIButton!
     
     private var user: SuccessGetUser?
     private var email: GetUserStruct!
@@ -27,8 +28,8 @@ class PerfilViewController: UIViewController {
         fatalError("init(coder:) has not been implemented")
     }
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
 
         title = "Perfil"
         fetchDataFromAPI()
@@ -60,4 +61,18 @@ class PerfilViewController: UIViewController {
                 print("Error: No se pudo obtener el usuario.")
             }
         }
+    
+    
+    @IBAction func editarButtonAction(_ sender: UIButton) {
+        let editPerfilVC = EditPerfilViewController()
+
+            // Configura los valores en la vista de edición
+            editPerfilVC.nombreInicial = user?.nombre
+            editPerfilVC.apellidoInicial = user?.apellido
+            editPerfilVC.telefonoInicial = user?.telefono
+            editPerfilVC.emailInicial = user?.email
+
+            self.navigationController?.pushViewController(editPerfilVC, animated:true)
+    }
+    
 }

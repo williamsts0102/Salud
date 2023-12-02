@@ -12,6 +12,8 @@
 		B71FBF022B1B943500547DEE /* EditPerfilViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B71FBF012B1B943500547DEE /* EditPerfilViewController.swift */; };
 		B71FBF052B1B9AA100547DEE /* MedicamentoInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B71FBF032B1B9AA100547DEE /* MedicamentoInfoViewController.swift */; };
 		B71FBF062B1B9AA100547DEE /* MedicamentoInfoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B71FBF042B1B9AA100547DEE /* MedicamentoInfoViewController.xib */; };
+		B71FBF0C2B1BBA2E00547DEE /* EditUserStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = B71FBF0B2B1BBA2E00547DEE /* EditUserStruct.swift */; };
+		B71FBF102B1BBAF000547DEE /* SuccessUpdateUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = B71FBF0F2B1BBAF000547DEE /* SuccessUpdateUser.swift */; };
 		B7421DF52B1BAE9E00E8654C /* PagoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7421DF32B1BAE9E00E8654C /* PagoViewController.swift */; };
 		B7421DF62B1BAE9E00E8654C /* PagoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B7421DF42B1BAE9E00E8654C /* PagoViewController.xib */; };
 		B743C3A42B15533A002A4A38 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B743C3A32B15533A002A4A38 /* AppDelegate.swift */; };
@@ -46,6 +48,8 @@
 		B71FBF012B1B943500547DEE /* EditPerfilViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditPerfilViewController.swift; sourceTree = "<group>"; };
 		B71FBF032B1B9AA100547DEE /* MedicamentoInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedicamentoInfoViewController.swift; sourceTree = "<group>"; };
 		B71FBF042B1B9AA100547DEE /* MedicamentoInfoViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MedicamentoInfoViewController.xib; sourceTree = "<group>"; };
+		B71FBF0B2B1BBA2E00547DEE /* EditUserStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditUserStruct.swift; sourceTree = "<group>"; };
+		B71FBF0F2B1BBAF000547DEE /* SuccessUpdateUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuccessUpdateUser.swift; sourceTree = "<group>"; };
 		B7421DF32B1BAE9E00E8654C /* PagoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PagoViewController.swift; sourceTree = "<group>"; };
 		B7421DF42B1BAE9E00E8654C /* PagoViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PagoViewController.xib; sourceTree = "<group>"; };
 		B743C3A02B15533A002A4A38 /* Salud.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Salud.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -158,6 +162,7 @@
 			children = (
 				B745D6852B174BCD0001CBAE /* RegisterUserStruct.swift */,
 				B7E8F3402B1ADA150087740D /* GetUserStruct.swift */,
+				B71FBF0B2B1BBA2E00547DEE /* EditUserStruct.swift */,
 			);
 			path = Request;
 			sourceTree = "<group>";
@@ -168,6 +173,7 @@
 				B745D6872B174E010001CBAE /* SuccesRegisterUser.swift */,
 				B7EAC52C2B187BFD0025240F /* SuccessListMedicamento.swift */,
 				B7E8F3422B1ADA480087740D /* SuccessGetUser.swift */,
+				B71FBF0F2B1BBAF000547DEE /* SuccessUpdateUser.swift */,
 			);
 			path = Response;
 			sourceTree = "<group>";
@@ -307,6 +313,7 @@
 				B7E8F3412B1ADA150087740D /* GetUserStruct.swift in Sources */,
 				B745D6862B174BCD0001CBAE /* RegisterUserStruct.swift in Sources */,
 				B743C3BD2B156A59002A4A38 /* HomeViewController.swift in Sources */,
+				B71FBF0C2B1BBA2E00547DEE /* EditUserStruct.swift in Sources */,
 				B743C3A82B15533A002A4A38 /* AuthViewController.swift in Sources */,
 				B7EAC5232B180AD80025240F /* PerfilViewController.swift in Sources */,
 				B7E8F3432B1ADA480087740D /* SuccessGetUser.swift in Sources */,
@@ -315,6 +322,7 @@
 				B743C3A62B15533A002A4A38 /* SceneDelegate.swift in Sources */,
 				B745D6882B174E010001CBAE /* SuccesRegisterUser.swift in Sources */,
 				B745D6812B16F8840001CBAE /* Medicamento.swift in Sources */,
+				B71FBF102B1BBAF000547DEE /* SuccessUpdateUser.swift in Sources */,
 				B7EAC52A2B1841C80025240F /* MyCustomCollectionViewCell.swift in Sources */,
 				B71FBF022B1B943500547DEE /* EditPerfilViewController.swift in Sources */,
 				B7421DF52B1BAE9E00E8654C /* PagoViewController.swift in Sources */,

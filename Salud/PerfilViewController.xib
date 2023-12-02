@@ -11,6 +11,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PerfilViewController" customModule="Salud" customModuleProvider="target">
             <connections>
                 <outlet property="apellidoTextField" destination="rQj-To-kzu" id="5U6-j9-9oU"/>
+                <outlet property="editarButton" destination="CfQ-Aq-m0O" id="2R4-Zt-7bx"/>
                 <outlet property="emailTextField" destination="I17-Qb-NyQ" id="b36-fH-eZH"/>
                 <outlet property="nombreTextField" destination="X0S-Eh-rcL" id="mGu-h7-kWX"/>
                 <outlet property="telefonoTextField" destination="v1r-KT-Dfa" id="KGx-UX-oJn"/>
@@ -76,6 +77,9 @@
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <state key="normal" title="Button"/>
                     <buttonConfiguration key="configuration" style="plain" title="Editar"/>
+                    <connections>
+                        <action selector="editarButtonAction:" destination="-1" eventType="touchUpInside" id="TkK-cB-wxW"/>
+                    </connections>
                 </button>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Email:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uk4-Q9-jNC">
                     <rect key="frame" x="57" y="152" width="46" height="21"/>
