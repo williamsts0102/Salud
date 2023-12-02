@@ -13,6 +13,6 @@ struct SuccessGetUser: Codable {
     var nombre:String
     var apellido:String
     var telefono:String
-    var id_rol:Int
+    var id_rol:String
     var foto:String
 }

@@ -73,7 +73,7 @@ class TiendaViewController: UIViewController {
 extension TiendaViewController: UICollectionViewDataSource{
     
     public func numberOfSections(in collectionView: UICollectionView) -> Int {
-        return 2
+        return 1
     }
     
     public func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {

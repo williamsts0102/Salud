@@ -44,7 +44,6 @@
                             <buttonConfiguration key="configuration" style="plain" title="Perfil"/>
                             <connections>
                                 <action selector="perfilButtonAction:" destination="-1" eventType="touchUpInside" id="xVI-mo-Sfz"/>
-                                <action selector="tiendaButtonAction:" destination="-1" eventType="touchUpInside" id="to6-es-2Yp"/>
                             </connections>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VZy-Ma-6r4">

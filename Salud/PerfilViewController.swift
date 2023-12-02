@@ -15,8 +15,9 @@ class PerfilViewController: UIViewController {
     @IBOutlet weak var apellidoTextField: UILabel!
     @IBOutlet weak var telefonoTextField: UILabel!
     
-    private var myData: [Medicamento] = []
-    private var medicamento: Medicamento?
+    private var user: SuccessGetUser?
+        private let email: GetUserStruct = GetUserStruct(email: "prueba@gmail.com") // Aquí debes poner el correo estático que quieras consultar
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,25 +28,28 @@ class PerfilViewController: UIViewController {
     }
     
     private func fetchDataFromAPI() {
-        AF.request("https://apisalud.wendyhuaman.com/api/getUserByEmail").responseDecodable(of: SuccessListMedicamento.self) { response in
-            switch response.result {
-            case .success(let data):
-                self.myData = data.medicamentos
-                                if self.myData.count > 1 {
-                                    self.medicamento = self.myData[1]
-                                    self.updateUI()
-                                }
-            case .failure(let error):
-                print("Error: \(error.localizedDescription)")
+            AF.request("https://apisalud.wendyhuaman.com/api/getUserByEmail", method: .post, parameters: email, encoder: JSONParameterEncoder.default).responseDecodable(of: SuccessGetUser.self) { response in
+                switch response.result {
+                case .success(let data):
+                    print("Response Data: \(data)") // Muestra toda la respuesta
+                    self.user = data
+                    self.updateUI()
+                case .failure(let error):
+                    print("Error: \(error.localizedDescription)")
+                }
             }
         }
-    }
-    
-    
-    private func updateUI() {
-           // Actualiza la interfaz de usuario con los datos obtenidos
-           emailTextField.text = medicamento?.nombre
-           // Puedes agregar más actualizaciones de UI según sea necesario
-       }
-    
+
+        private func updateUI() {
+            // Actualiza la interfaz de usuario con los datos obtenidos
+            if let user = user {
+                emailTextField.text = user.email
+                nombreTextField.text = user.nombre
+                apellidoTextField.text = user.apellido
+                telefonoTextField.text = user.telefono
+                print("Email: \(user.email), Nombre: \(user.nombre), Apellido: \(user.apellido), Teléfono: \(user.telefono)")
+            } else {
+                print("Error: No se pudo obtener el usuario.")
+            }
+        }
 }

@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		9FD45595FEF3C407624692AA /* Pods_Salud.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E33CB13F90CB213D10E9BF0 /* Pods_Salud.framework */; };
+		B71FBF002B1B918F00547DEE /* EditPerfilViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B71FBEFF2B1B918F00547DEE /* EditPerfilViewController.xib */; };
+		B71FBF022B1B943500547DEE /* EditPerfilViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B71FBF012B1B943500547DEE /* EditPerfilViewController.swift */; };
 		B743C3A42B15533A002A4A38 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B743C3A32B15533A002A4A38 /* AppDelegate.swift */; };
 		B743C3A62B15533A002A4A38 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B743C3A52B15533A002A4A38 /* SceneDelegate.swift */; };
 		B743C3A82B15533A002A4A38 /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B743C3A72B15533A002A4A38 /* AuthViewController.swift */; };
@@ -36,6 +38,8 @@
 		9E33CB13F90CB213D10E9BF0 /* Pods_Salud.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Salud.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		ABDA659AA0C15E2A0DF319BE /* Pods-Salud.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Salud.debug.xcconfig"; path = "Target Support Files/Pods-Salud/Pods-Salud.debug.xcconfig"; sourceTree = "<group>"; };
 		AC8D4B0D09A9F23E4A53EEE4 /* Pods-Salud.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Salud.release.xcconfig"; path = "Target Support Files/Pods-Salud/Pods-Salud.release.xcconfig"; sourceTree = "<group>"; };
+		B71FBEFF2B1B918F00547DEE /* EditPerfilViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EditPerfilViewController.xib; sourceTree = "<group>"; };
+		B71FBF012B1B943500547DEE /* EditPerfilViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditPerfilViewController.swift; sourceTree = "<group>"; };
 		B743C3A02B15533A002A4A38 /* Salud.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Salud.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B743C3A32B15533A002A4A38 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B743C3A52B15533A002A4A38 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -123,6 +127,8 @@
 				B7EAC5262B1818010025240F /* TiendaViewController.swift */,
 				B7EAC5282B1841C80025240F /* MyCustomCollectionViewCell.swift */,
 				B7EAC5292B1841C80025240F /* MyCustomCollectionViewCell.xib */,
+				B71FBEFF2B1B918F00547DEE /* EditPerfilViewController.xib */,
+				B71FBF012B1B943500547DEE /* EditPerfilViewController.swift */,
 			);
 			path = Salud;
 			sourceTree = "<group>";
@@ -227,6 +233,7 @@
 				B7E8F3392B1AC1EE0087740D /* GoogleService-Info.plist in Resources */,
 				B743C3BF2B158E40002A4A38 /* HomeViewController.xib in Resources */,
 				B743C3B02B15533B002A4A38 /* Assets.xcassets in Resources */,
+				B71FBF002B1B918F00547DEE /* EditPerfilViewController.xib in Resources */,
 				B7EAC5212B180A9A0025240F /* PerfilViewController.xib in Resources */,
 				B7EAC5252B1817310025240F /* TiendaViewController.xib in Resources */,
 				B743C3AB2B15533A002A4A38 /* Main.storyboard in Resources */,
@@ -294,6 +301,7 @@
 				B745D6882B174E010001CBAE /* SuccesRegisterUser.swift in Sources */,
 				B745D6812B16F8840001CBAE /* Medicamento.swift in Sources */,
 				B7EAC52A2B1841C80025240F /* MyCustomCollectionViewCell.swift in Sources */,
+				B71FBF022B1B943500547DEE /* EditPerfilViewController.swift in Sources */,
 				B743C3AE2B15533A002A4A38 /* Salud.xcdatamodeld in Sources */,
 				B7EAC52D2B187BFD0025240F /* SuccessListMedicamento.swift in Sources */,
 				B7EAC5272B1818010025240F /* TiendaViewController.swift in Sources */,
