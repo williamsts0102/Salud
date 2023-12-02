@@ -12,6 +12,8 @@
 		B71FBF022B1B943500547DEE /* EditPerfilViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B71FBF012B1B943500547DEE /* EditPerfilViewController.swift */; };
 		B71FBF052B1B9AA100547DEE /* MedicamentoInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B71FBF032B1B9AA100547DEE /* MedicamentoInfoViewController.swift */; };
 		B71FBF062B1B9AA100547DEE /* MedicamentoInfoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B71FBF042B1B9AA100547DEE /* MedicamentoInfoViewController.xib */; };
+		B7421DF52B1BAE9E00E8654C /* PagoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7421DF32B1BAE9E00E8654C /* PagoViewController.swift */; };
+		B7421DF62B1BAE9E00E8654C /* PagoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B7421DF42B1BAE9E00E8654C /* PagoViewController.xib */; };
 		B743C3A42B15533A002A4A38 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B743C3A32B15533A002A4A38 /* AppDelegate.swift */; };
 		B743C3A62B15533A002A4A38 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B743C3A52B15533A002A4A38 /* SceneDelegate.swift */; };
 		B743C3A82B15533A002A4A38 /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B743C3A72B15533A002A4A38 /* AuthViewController.swift */; };
@@ -44,6 +46,8 @@
 		B71FBF012B1B943500547DEE /* EditPerfilViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditPerfilViewController.swift; sourceTree = "<group>"; };
 		B71FBF032B1B9AA100547DEE /* MedicamentoInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedicamentoInfoViewController.swift; sourceTree = "<group>"; };
 		B71FBF042B1B9AA100547DEE /* MedicamentoInfoViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MedicamentoInfoViewController.xib; sourceTree = "<group>"; };
+		B7421DF32B1BAE9E00E8654C /* PagoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PagoViewController.swift; sourceTree = "<group>"; };
+		B7421DF42B1BAE9E00E8654C /* PagoViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PagoViewController.xib; sourceTree = "<group>"; };
 		B743C3A02B15533A002A4A38 /* Salud.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Salud.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B743C3A32B15533A002A4A38 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B743C3A52B15533A002A4A38 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -135,6 +139,8 @@
 				B71FBF012B1B943500547DEE /* EditPerfilViewController.swift */,
 				B71FBF032B1B9AA100547DEE /* MedicamentoInfoViewController.swift */,
 				B71FBF042B1B9AA100547DEE /* MedicamentoInfoViewController.xib */,
+				B7421DF32B1BAE9E00E8654C /* PagoViewController.swift */,
+				B7421DF42B1BAE9E00E8654C /* PagoViewController.xib */,
 			);
 			path = Salud;
 			sourceTree = "<group>";
@@ -245,6 +251,7 @@
 				B7EAC5252B1817310025240F /* TiendaViewController.xib in Resources */,
 				B743C3AB2B15533A002A4A38 /* Main.storyboard in Resources */,
 				B7EAC52B2B1841C80025240F /* MyCustomCollectionViewCell.xib in Resources */,
+				B7421DF62B1BAE9E00E8654C /* PagoViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -310,6 +317,7 @@
 				B745D6812B16F8840001CBAE /* Medicamento.swift in Sources */,
 				B7EAC52A2B1841C80025240F /* MyCustomCollectionViewCell.swift in Sources */,
 				B71FBF022B1B943500547DEE /* EditPerfilViewController.swift in Sources */,
+				B7421DF52B1BAE9E00E8654C /* PagoViewController.swift in Sources */,
 				B743C3AE2B15533A002A4A38 /* Salud.xcdatamodeld in Sources */,
 				B7EAC52D2B187BFD0025240F /* SuccessListMedicamento.swift in Sources */,
 				B7EAC5272B1818010025240F /* TiendaViewController.swift in Sources */,
