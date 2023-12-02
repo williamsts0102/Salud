@@ -10,6 +10,10 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="EditPerfilViewController" customModule="Salud" customModuleProvider="target">
             <connections>
+                <outlet property="apellidoTextField" destination="wy6-lg-X9a" id="ppA-3C-qLQ"/>
+                <outlet property="guardarButton" destination="qEe-aY-tLj" id="wvc-QR-t3F"/>
+                <outlet property="nombreTextField" destination="lTx-lS-4km" id="zr6-Eb-2K5"/>
+                <outlet property="telefonoTextField" destination="gM8-vl-Txq" id="XCA-ss-cUm"/>
                 <outlet property="view" destination="iN0-l3-epB" id="59p-Pg-sPk"/>
             </connections>
         </placeholder>
@@ -35,6 +39,9 @@
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <state key="normal" title="Button"/>
                     <buttonConfiguration key="configuration" style="plain" title="Guardar"/>
+                    <connections>
+                        <action selector="guardarButtonAction:" destination="-1" eventType="touchUpInside" id="8A8-Mi-LLb"/>
+                    </connections>
                 </button>
                 <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lTx-lS-4km">
                     <rect key="frame" x="100" y="198" width="193" height="34"/>

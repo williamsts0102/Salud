@@ -9,21 +9,20 @@ import UIKit
 
 class EditPerfilViewController: UIViewController {
 
+    @IBOutlet weak var nombreTextField: UITextField!
+    @IBOutlet weak var apellidoTextField: UITextField!
+    @IBOutlet weak var telefonoTextField: UITextField!
+    @IBOutlet weak var guardarButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        
+        
     }
-
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    
+    @IBAction func guardarButtonAction(_ sender: Any) {
+        
     }
-    */
-
+    
 }

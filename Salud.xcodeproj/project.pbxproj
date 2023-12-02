@@ -10,6 +10,8 @@
 		9FD45595FEF3C407624692AA /* Pods_Salud.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E33CB13F90CB213D10E9BF0 /* Pods_Salud.framework */; };
 		B71FBF002B1B918F00547DEE /* EditPerfilViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B71FBEFF2B1B918F00547DEE /* EditPerfilViewController.xib */; };
 		B71FBF022B1B943500547DEE /* EditPerfilViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B71FBF012B1B943500547DEE /* EditPerfilViewController.swift */; };
+		B71FBF052B1B9AA100547DEE /* MedicamentoInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B71FBF032B1B9AA100547DEE /* MedicamentoInfoViewController.swift */; };
+		B71FBF062B1B9AA100547DEE /* MedicamentoInfoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B71FBF042B1B9AA100547DEE /* MedicamentoInfoViewController.xib */; };
 		B743C3A42B15533A002A4A38 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B743C3A32B15533A002A4A38 /* AppDelegate.swift */; };
 		B743C3A62B15533A002A4A38 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B743C3A52B15533A002A4A38 /* SceneDelegate.swift */; };
 		B743C3A82B15533A002A4A38 /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B743C3A72B15533A002A4A38 /* AuthViewController.swift */; };
@@ -40,6 +42,8 @@
 		AC8D4B0D09A9F23E4A53EEE4 /* Pods-Salud.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Salud.release.xcconfig"; path = "Target Support Files/Pods-Salud/Pods-Salud.release.xcconfig"; sourceTree = "<group>"; };
 		B71FBEFF2B1B918F00547DEE /* EditPerfilViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EditPerfilViewController.xib; sourceTree = "<group>"; };
 		B71FBF012B1B943500547DEE /* EditPerfilViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditPerfilViewController.swift; sourceTree = "<group>"; };
+		B71FBF032B1B9AA100547DEE /* MedicamentoInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedicamentoInfoViewController.swift; sourceTree = "<group>"; };
+		B71FBF042B1B9AA100547DEE /* MedicamentoInfoViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MedicamentoInfoViewController.xib; sourceTree = "<group>"; };
 		B743C3A02B15533A002A4A38 /* Salud.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Salud.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B743C3A32B15533A002A4A38 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B743C3A52B15533A002A4A38 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -129,6 +133,8 @@
 				B7EAC5292B1841C80025240F /* MyCustomCollectionViewCell.xib */,
 				B71FBEFF2B1B918F00547DEE /* EditPerfilViewController.xib */,
 				B71FBF012B1B943500547DEE /* EditPerfilViewController.swift */,
+				B71FBF032B1B9AA100547DEE /* MedicamentoInfoViewController.swift */,
+				B71FBF042B1B9AA100547DEE /* MedicamentoInfoViewController.xib */,
 			);
 			path = Salud;
 			sourceTree = "<group>";
@@ -232,6 +238,7 @@
 				B743C3B32B15533B002A4A38 /* LaunchScreen.storyboard in Resources */,
 				B7E8F3392B1AC1EE0087740D /* GoogleService-Info.plist in Resources */,
 				B743C3BF2B158E40002A4A38 /* HomeViewController.xib in Resources */,
+				B71FBF062B1B9AA100547DEE /* MedicamentoInfoViewController.xib in Resources */,
 				B743C3B02B15533B002A4A38 /* Assets.xcassets in Resources */,
 				B71FBF002B1B918F00547DEE /* EditPerfilViewController.xib in Resources */,
 				B7EAC5212B180A9A0025240F /* PerfilViewController.xib in Resources */,
@@ -297,6 +304,7 @@
 				B7EAC5232B180AD80025240F /* PerfilViewController.swift in Sources */,
 				B7E8F3432B1ADA480087740D /* SuccessGetUser.swift in Sources */,
 				B743C3A42B15533A002A4A38 /* AppDelegate.swift in Sources */,
+				B71FBF052B1B9AA100547DEE /* MedicamentoInfoViewController.swift in Sources */,
 				B743C3A62B15533A002A4A38 /* SceneDelegate.swift in Sources */,
 				B745D6882B174E010001CBAE /* SuccesRegisterUser.swift in Sources */,
 				B745D6812B16F8840001CBAE /* Medicamento.swift in Sources */,
