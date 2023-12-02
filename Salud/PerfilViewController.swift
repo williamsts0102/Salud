@@ -27,7 +27,7 @@ class PerfilViewController: UIViewController {
     }
     
     private func fetchDataFromAPI() {
-        AF.request("https://apisalud.wendyhuaman.com/api/listMedicamentos").responseDecodable(of: SuccessListMedicamento.self) { response in
+        AF.request("https://apisalud.wendyhuaman.com/api/getUserByEmail").responseDecodable(of: SuccessListMedicamento.self) { response in
             switch response.result {
             case .success(let data):
                 self.myData = data.medicamentos
