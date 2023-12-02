@@ -82,13 +82,10 @@ class AuthViewController: UIViewController {
     
     
     @IBAction func googleButtonAction(_ sender: UIButton) {
-        //GIDSignIn.sharedInstance()?.signIn()
-        let email:String
-        
         guard let clientID = FirebaseApp.app()?.options.clientID else { return }
 
-            let config = GIDConfiguration(clientID: clientID)
-            GIDSignIn.sharedInstance.configuration = config
+        let config = GIDConfiguration(clientID: clientID)
+        GIDSignIn.sharedInstance.configuration = config
 
         GIDSignIn.sharedInstance.signIn(withPresenting: self) { [weak self] result, error in
             guard error == nil, let self = self else { return }
@@ -100,19 +97,19 @@ class AuthViewController: UIViewController {
             let credential = GoogleAuthProvider.credential(withIDToken: idToken,
                                                            accessToken: user.accessToken.tokenString)
             
-            // ...
-            
-            // Save user info to UserDefaults
-            /*
-            let defaults = UserDefaults.standard
-            defaults.set(result?.user.profile?.email, forKey: "email")
-            defaults.set("google", forKey: "provider")
-             */
-            Auth.auth().signIn(with: credential){(result, error) in
+            Auth.auth().signIn(with: credential) { (result, error) in
                 self.showHome(result: result, error: error, provider: .google)
+                
+                // Si el inicio de sesión con Google es exitoso, registrar el usuario en tu otra API
+                if error == nil, let email = result?.user.email {
+                    // Crear un objeto RegisterUserStruct con el email y una contraseña vacía
+                    let registerUserObj = RegisterUserStruct(email: email, password: "")
+                    
+                    // Llamar a la función registerUser con el objeto creado
+                    self.registerUser(obj: registerUserObj)
+                }
             }
         }
-        
     }
     
     private func showHome(result: AuthDataResult?, error: Error?, provider: ProviderType){
@@ -132,15 +129,22 @@ class AuthViewController: UIViewController {
     @IBAction func facebookButtonAction(_ sender: UIButton) {
         let loginManager = LoginManager()
         loginManager.logOut()
-        loginManager.logIn(permissions: [.email], viewController: self){
-        (result) in
+        loginManager.logIn(permissions: [.email], viewController: self) { result in
             switch result {
             case .success(granted: let granted, declined: let declined, token: let token):
                 
                 let credential = FacebookAuthProvider.credential(withAccessToken: token.tokenString)
-                Auth.auth().signIn(with: credential){ (result, error) in
+                Auth.auth().signIn(with: credential) { (result, error) in
                     self.showHome(result: result, error: error, provider: .facebook)
                     
+                    // Si el inicio de sesión con Facebook es exitoso, registrar el usuario en tu otra API
+                    if error == nil, let email = result?.user.email {
+                        // Crear un objeto RegisterUserStruct con el email y una contraseña vacía
+                        let registerUserObj = RegisterUserStruct(email: email, password: "")
+                        
+                        // Llamar a la función registerUser con el objeto creado
+                        self.registerUser(obj: registerUserObj)
+                    }
                 }
             case .cancelled:
                 break
@@ -148,7 +152,6 @@ class AuthViewController: UIViewController {
                 break
             }
         }
-        
     }
     
     func registerUser(obj: RegisterUserStruct) {

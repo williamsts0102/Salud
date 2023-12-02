@@ -20,7 +20,7 @@
 		B745D6812B16F8840001CBAE /* Medicamento.swift in Sources */ = {isa = PBXBuildFile; fileRef = B745D6802B16F8840001CBAE /* Medicamento.swift */; };
 		B745D6862B174BCD0001CBAE /* RegisterUserStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = B745D6852B174BCD0001CBAE /* RegisterUserStruct.swift */; };
 		B745D6882B174E010001CBAE /* SuccesRegisterUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = B745D6872B174E010001CBAE /* SuccesRegisterUser.swift */; };
-		B7B698722B16A34700E52F26 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B7B698712B16A34700E52F26 /* GoogleService-Info.plist */; };
+		B7E8F3392B1AC1EE0087740D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B7E8F3382B1AC1EE0087740D /* GoogleService-Info.plist */; };
 		B7EAC5212B180A9A0025240F /* PerfilViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B7EAC5202B180A9A0025240F /* PerfilViewController.xib */; };
 		B7EAC5232B180AD80025240F /* PerfilViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7EAC5222B180AD80025240F /* PerfilViewController.swift */; };
 		B7EAC5252B1817310025240F /* TiendaViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B7EAC5242B1817310025240F /* TiendaViewController.xib */; };
@@ -48,7 +48,7 @@
 		B745D6802B16F8840001CBAE /* Medicamento.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Medicamento.swift; sourceTree = "<group>"; };
 		B745D6852B174BCD0001CBAE /* RegisterUserStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterUserStruct.swift; sourceTree = "<group>"; };
 		B745D6872B174E010001CBAE /* SuccesRegisterUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuccesRegisterUser.swift; sourceTree = "<group>"; };
-		B7B698712B16A34700E52F26 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		B7E8F3382B1AC1EE0087740D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		B7EAC5202B180A9A0025240F /* PerfilViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PerfilViewController.xib; sourceTree = "<group>"; };
 		B7EAC5222B180AD80025240F /* PerfilViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerfilViewController.swift; sourceTree = "<group>"; };
 		B7EAC5242B1817310025240F /* TiendaViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TiendaViewController.xib; sourceTree = "<group>"; };
@@ -102,7 +102,7 @@
 		B743C3A22B15533A002A4A38 /* Salud */ = {
 			isa = PBXGroup;
 			children = (
-				B7B698712B16A34700E52F26 /* GoogleService-Info.plist */,
+				B7E8F3382B1AC1EE0087740D /* GoogleService-Info.plist */,
 				B743C3A32B15533A002A4A38 /* AppDelegate.swift */,
 				B743C3A52B15533A002A4A38 /* SceneDelegate.swift */,
 				B743C3A72B15533A002A4A38 /* AuthViewController.swift */,
@@ -218,8 +218,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				B743C3B32B15533B002A4A38 /* LaunchScreen.storyboard in Resources */,
+				B7E8F3392B1AC1EE0087740D /* GoogleService-Info.plist in Resources */,
 				B743C3BF2B158E40002A4A38 /* HomeViewController.xib in Resources */,
-				B7B698722B16A34700E52F26 /* GoogleService-Info.plist in Resources */,
 				B743C3B02B15533B002A4A38 /* Assets.xcassets in Resources */,
 				B7EAC5212B180A9A0025240F /* PerfilViewController.xib in Resources */,
 				B7EAC5252B1817310025240F /* TiendaViewController.xib in Resources */,
