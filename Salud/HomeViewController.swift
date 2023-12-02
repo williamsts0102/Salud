@@ -87,7 +87,7 @@ class HomeViewController: UIViewController {
     }
     
     @IBAction func perfilButtonAction(_ sender: UIButton) {
-        self.navigationController?.pushViewController(PerfilViewController(), animated: true)
+        self.navigationController?.pushViewController(PerfilViewController(emailHome: email), animated: true)
     }
     
 }
