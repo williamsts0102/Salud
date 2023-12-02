@@ -22,6 +22,17 @@
             <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qEe-aY-tLj">
+                    <rect key="frame" x="139" y="494" width="115" height="35"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" red="0.74901962280000001" green="0.2117646933" blue="0.5176470876" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <color key="tintColor" systemColor="systemBackgroundColor"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" image="square.and.arrow.up" catalog="system" title=" Guardar"/>
+                    <connections>
+                        <action selector="guardarButtonAction:" destination="-1" eventType="touchUpInside" id="8A8-Mi-LLb"/>
+                    </connections>
+                </button>
                 <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Ingrese su apellido" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wy6-lg-X9a">
                     <rect key="frame" x="38" y="273" width="316" height="34"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -68,16 +79,11 @@
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qEe-aY-tLj">
-                    <rect key="frame" x="139" y="494" width="115" height="35"/>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xc4-Dy-HL8">
+                    <rect key="frame" x="90" y="566" width="212" height="185"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <color key="backgroundColor" red="0.74901962280000001" green="0.2117646933" blue="0.5176470876" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                    <color key="tintColor" systemColor="systemBackgroundColor"/>
                     <state key="normal" title="Button"/>
-                    <buttonConfiguration key="configuration" style="plain" image="square.and.arrow.up" catalog="system" title=" Guardar"/>
-                    <connections>
-                        <action selector="guardarButtonAction:" destination="-1" eventType="touchUpInside" id="8A8-Mi-LLb"/>
-                    </connections>
+                    <buttonConfiguration key="configuration" style="plain" image="fondo" title=""/>
                 </button>
             </subviews>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
@@ -86,6 +92,7 @@
         </view>
     </objects>
     <resources>
+        <image name="fondo" width="256" height="245"/>
         <image name="square.and.arrow.up" catalog="system" width="115" height="128"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

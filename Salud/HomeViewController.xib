@@ -73,6 +73,19 @@
                         </button>
                     </subviews>
                 </stackView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Tu salud, nuestro compromiso" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dO9-dZ-rLd">
+                    <rect key="frame" x="81" y="553" width="230" height="21"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.74901962280000001" green="0.2117646933" blue="0.5176470876" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lbY-OF-NOf">
+                    <rect key="frame" x="45" y="369" width="302" height="231"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" image="fondo" title=""/>
+                </button>
             </subviews>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -81,11 +94,12 @@
                 <constraint firstItem="gr4-lK-SCQ" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="16" id="Qiz-LI-GPb"/>
                 <constraint firstItem="gr4-lK-SCQ" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="16" id="kJG-ev-nNB"/>
             </constraints>
-            <point key="canvasLocation" x="-83" y="-12"/>
+            <point key="canvasLocation" x="-83.206106870229007" y="-12.67605633802817"/>
         </view>
     </objects>
     <resources>
         <image name="cart.fill" catalog="system" width="128" height="102"/>
+        <image name="fondo" width="256" height="245"/>
         <image name="person.circle" catalog="system" width="128" height="123"/>
         <image name="square.and.arrow.down" catalog="system" width="121" height="128"/>
         <systemColor name="systemBackgroundColor">
