@@ -34,16 +34,20 @@
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yg0-D1-icg">
                                                 <rect key="frame" x="0.0" y="0.0" width="176.66666666666666" height="40"/>
+                                                <color key="backgroundColor" systemColor="systemGrayColor"/>
+                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="plain" title="Registrar"/>
+                                                <buttonConfiguration key="configuration" style="plain" image="pencil.line" catalog="system" title=" Registrar"/>
                                                 <connections>
                                                     <action selector="signUpButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="abu-c9-1A7"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VfQ-m5-cNB">
                                                 <rect key="frame" x="184.66666666666663" y="0.0" width="176.33333333333337" height="40"/>
+                                                <color key="backgroundColor" systemColor="systemGreenColor"/>
+                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="plain" title="Acceder"/>
+                                                <buttonConfiguration key="configuration" style="plain" image="externaldrive.badge.questionmark" catalog="system" title=" Acceder"/>
                                                 <connections>
                                                     <action selector="logInButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="S59-sJ-e9D"/>
                                                 </connections>
@@ -55,16 +59,20 @@
                                     </stackView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nEg-gQ-Xvy">
                                         <rect key="frame" x="0.0" y="144" width="361" height="40"/>
+                                        <color key="backgroundColor" systemColor="systemBrownColor"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="Google"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="icons8-logo-de-google-30" title=" Ingrese con Google" titleAlignment="automatic"/>
                                         <connections>
                                             <action selector="googleButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vS7-W1-9N6"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2KO-96-1PS">
                                         <rect key="frame" x="0.0" y="192" width="361" height="40"/>
+                                        <color key="backgroundColor" systemColor="linkColor"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="Facebook"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="icons8-facebook-48" title="Ingrese con Facebook"/>
                                         <connections>
                                             <action selector="facebookButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lxp-Ma-ybF"/>
                                         </connections>
@@ -115,8 +123,24 @@
         </scene>
     </scenes>
     <resources>
+        <image name="externaldrive.badge.questionmark" catalog="system" width="128" height="91"/>
+        <image name="icons8-facebook-48" width="48" height="48"/>
+        <image name="icons8-logo-de-google-30" width="30" height="30"/>
+        <image name="pencil.line" catalog="system" width="128" height="98"/>
+        <systemColor name="linkColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBrownColor">
+            <color red="0.63529411764705879" green="0.51764705882352946" blue="0.36862745098039218" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGrayColor">
+            <color red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

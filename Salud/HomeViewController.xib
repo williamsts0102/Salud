@@ -40,27 +40,33 @@
                         </label>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ijr-Qk-1wr">
                             <rect key="frame" x="0.0" y="96" width="361" height="40"/>
+                            <color key="backgroundColor" systemColor="systemGrayColor"/>
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <state key="normal" title="Button"/>
-                            <buttonConfiguration key="configuration" style="plain" title="Perfil"/>
+                            <buttonConfiguration key="configuration" style="plain" image="person.circle" catalog="system" title=" Perfil"/>
                             <connections>
                                 <action selector="perfilButtonAction:" destination="-1" eventType="touchUpInside" id="xVI-mo-Sfz"/>
                             </connections>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VZy-Ma-6r4">
                             <rect key="frame" x="0.0" y="144" width="361" height="40"/>
+                            <color key="backgroundColor" systemColor="systemPurpleColor"/>
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <state key="normal" title="Button"/>
-                            <buttonConfiguration key="configuration" style="plain" title="Tienda"/>
+                            <buttonConfiguration key="configuration" style="plain" image="cart.fill" catalog="system" title=" Tienda"/>
                             <connections>
                                 <action selector="tiendaButtonAction:" destination="-1" eventType="touchUpInside" id="ASo-NQ-FZZ"/>
                             </connections>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yh7-mD-6eH">
                             <rect key="frame" x="0.0" y="192" width="361" height="40"/>
+                            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="40" id="goY-dR-GbV"/>
                             </constraints>
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <state key="normal" title="Button"/>
-                            <buttonConfiguration key="configuration" style="plain" title="Cerrar Sesion"/>
+                            <buttonConfiguration key="configuration" style="plain" image="square.and.arrow.down" catalog="system" title=" Cerrar Sesion"/>
                             <connections>
                                 <action selector="closeSessionButtonAction:" destination="-1" eventType="touchUpInside" id="P5v-sR-UqQ"/>
                             </connections>
@@ -79,8 +85,17 @@
         </view>
     </objects>
     <resources>
+        <image name="cart.fill" catalog="system" width="128" height="102"/>
+        <image name="person.circle" catalog="system" width="128" height="123"/>
+        <image name="square.and.arrow.down" catalog="system" width="121" height="128"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGrayColor">
+            <color red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemPurpleColor">
+            <color red="0.68627450980392157" green="0.32156862745098042" blue="0.87058823529411766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

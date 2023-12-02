@@ -22,7 +22,9 @@ class EditPerfilViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        title = "Editar Perfil"
+     
         nombreTextField.text = llenarTextField(nombreInicial)
         apellidoTextField.text = llenarTextField(apellidoInicial)
         telefonoTextField.text = llenarTextField(telefonoInicial)

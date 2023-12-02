@@ -44,7 +44,7 @@
                     <color key="backgroundColor" systemColor="systemPurpleColor"/>
                     <color key="tintColor" systemColor="systemBackgroundColor"/>
                     <state key="normal" title="Button"/>
-                    <buttonConfiguration key="configuration" style="plain" title="Pagar"/>
+                    <buttonConfiguration key="configuration" style="plain" image="dollarsign.circle.fill" catalog="system" title=" Pagar"/>
                     <connections>
                         <action selector="pagarButtonAction:" destination="-1" eventType="touchUpInside" id="Vdw-Df-MMb"/>
                     </connections>
@@ -86,6 +86,7 @@
         </view>
     </objects>
     <resources>
+        <image name="dollarsign.circle.fill" catalog="system" width="128" height="123"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
