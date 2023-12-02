@@ -51,12 +51,10 @@ class TiendaViewController: UIViewController {
     }
     
     @objc private func searchTextFieldDidChange(_ textField: UITextField) {
-            // Filtra los datos basándose en el texto ingresado en el UITextField
             filteredData = myData.filter { medicamento in
                 return medicamento.nombre.lowercased().contains(textField.text?.lowercased() ?? "")
             }
 
-            // Recarga la UICollectionView con los datos filtrados
             collectionView.reloadData()
     }
     
@@ -77,18 +75,15 @@ extension TiendaViewController: UICollectionViewDataSource{
     }
     
     public func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        // Usar la cantidad de elementos en filteredData si hay un filtro activo
             if !filteredData.isEmpty {
                 return filteredData.count
             }
-            // Si no hay filtro, usar la cantidad de elementos en myData
             return myData.count
     }
     
     public func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "mycell", for: indexPath) as? MyCustomCollectionViewCell
 
-            // Usar medicamento desde filteredData si hay un filtro activo
             let medicamento: Medicamento
             if !filteredData.isEmpty {
                 medicamento = filteredData[indexPath.row]
@@ -116,33 +111,17 @@ extension TiendaViewController: UICollectionViewDelegate{
             medicamento = myData[indexPath.row]
         }
 
-        // Inicializa la vista MedicamentoInfoViewController
         let medicamentoInfoVC = MedicamentoInfoViewController()
 
-        // Pasa los datos al MedicamentoInfoViewController
-        medicamentoInfoVC.imagen = medicamento.imagen // Puedes asignar la imagen del medicamento aquí
+        medicamentoInfoVC.imagen = medicamento.imagen
         medicamentoInfoVC.nombre = medicamento.nombre
         medicamentoInfoVC.descripcion = medicamento.descripcion
         medicamentoInfoVC.precio = medicamento.precio
         medicamentoInfoVC.categoria = medicamento.id_categoria
         medicamentoInfoVC.unidades = medicamento.unidades
 
-        // Realiza la transición a MedicamentoInfoViewController
         self.navigationController?.pushViewController(medicamentoInfoVC, animated: true)
 
-        /*
-        let medicamentoVC = MedicamentoInfoViewController()
-
-        // Configura los valores en la vista de edición
-        medicamentoVC.imagen = user?.nombre
-        medicamentoVC.nombre = myData[indexPath.row]?.nombre
-        medicamentoVC.descripcion = user?.apellido
-        medicamentoVC.unidades = user?.telefono
-        medicamentoVC.precio = user?.email
-        medicamentoVC.categoria = user?.email
-
-        self.navigationController?.pushViewController(editPerfilVC, animated:true)
-         */
     }
 }
 
@@ -160,7 +139,6 @@ extension TiendaViewController: UIPickerViewDataSource, UIPickerViewDelegate {
     }
 
     func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
-        // Añadir 1 para la opción "Todas"
         return categories.count + 1
     }
 
@@ -175,10 +153,9 @@ extension TiendaViewController: UIPickerViewDataSource, UIPickerViewDelegate {
 
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
         if row == 0 {
-            // Si se selecciona "Todas", mostrar todos los medicamentos sin filtrar
+
             filteredData = myData
         } else {
-            // Si se selecciona una categoría específica, filtrar por esa categoría
             let selectedCategory = categories[row - 1]
             filteredData = myData.filter { medicamento in
                 return medicamento.id_categoria == selectedCategory
