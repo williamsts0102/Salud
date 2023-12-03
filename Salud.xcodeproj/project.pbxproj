@@ -14,6 +14,7 @@
 		B71FBF062B1B9AA100547DEE /* MedicamentoInfoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B71FBF042B1B9AA100547DEE /* MedicamentoInfoViewController.xib */; };
 		B71FBF0C2B1BBA2E00547DEE /* EditUserStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = B71FBF0B2B1BBA2E00547DEE /* EditUserStruct.swift */; };
 		B71FBF102B1BBAF000547DEE /* SuccessUpdateUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = B71FBF0F2B1BBAF000547DEE /* SuccessUpdateUser.swift */; };
+		B73C1FFE2B1C055E0085AEF2 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B73C1FFD2B1C055E0085AEF2 /* GoogleService-Info.plist */; };
 		B7421DF52B1BAE9E00E8654C /* PagoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7421DF32B1BAE9E00E8654C /* PagoViewController.swift */; };
 		B7421DF62B1BAE9E00E8654C /* PagoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B7421DF42B1BAE9E00E8654C /* PagoViewController.xib */; };
 		B743C3A42B15533A002A4A38 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B743C3A32B15533A002A4A38 /* AppDelegate.swift */; };
@@ -28,7 +29,6 @@
 		B745D6812B16F8840001CBAE /* Medicamento.swift in Sources */ = {isa = PBXBuildFile; fileRef = B745D6802B16F8840001CBAE /* Medicamento.swift */; };
 		B745D6862B174BCD0001CBAE /* RegisterUserStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = B745D6852B174BCD0001CBAE /* RegisterUserStruct.swift */; };
 		B745D6882B174E010001CBAE /* SuccesRegisterUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = B745D6872B174E010001CBAE /* SuccesRegisterUser.swift */; };
-		B7E8F3392B1AC1EE0087740D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B7E8F3382B1AC1EE0087740D /* GoogleService-Info.plist */; };
 		B7E8F3412B1ADA150087740D /* GetUserStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7E8F3402B1ADA150087740D /* GetUserStruct.swift */; };
 		B7E8F3432B1ADA480087740D /* SuccessGetUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7E8F3422B1ADA480087740D /* SuccessGetUser.swift */; };
 		B7EAC5212B180A9A0025240F /* PerfilViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B7EAC5202B180A9A0025240F /* PerfilViewController.xib */; };
@@ -50,6 +50,7 @@
 		B71FBF042B1B9AA100547DEE /* MedicamentoInfoViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MedicamentoInfoViewController.xib; sourceTree = "<group>"; };
 		B71FBF0B2B1BBA2E00547DEE /* EditUserStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditUserStruct.swift; sourceTree = "<group>"; };
 		B71FBF0F2B1BBAF000547DEE /* SuccessUpdateUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuccessUpdateUser.swift; sourceTree = "<group>"; };
+		B73C1FFD2B1C055E0085AEF2 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		B7421DF32B1BAE9E00E8654C /* PagoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PagoViewController.swift; sourceTree = "<group>"; };
 		B7421DF42B1BAE9E00E8654C /* PagoViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PagoViewController.xib; sourceTree = "<group>"; };
 		B743C3A02B15533A002A4A38 /* Salud.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Salud.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -66,7 +67,6 @@
 		B745D6802B16F8840001CBAE /* Medicamento.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Medicamento.swift; sourceTree = "<group>"; };
 		B745D6852B174BCD0001CBAE /* RegisterUserStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterUserStruct.swift; sourceTree = "<group>"; };
 		B745D6872B174E010001CBAE /* SuccesRegisterUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuccesRegisterUser.swift; sourceTree = "<group>"; };
-		B7E8F3382B1AC1EE0087740D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		B7E8F3402B1ADA150087740D /* GetUserStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetUserStruct.swift; sourceTree = "<group>"; };
 		B7E8F3422B1ADA480087740D /* SuccessGetUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuccessGetUser.swift; sourceTree = "<group>"; };
 		B7EAC5202B180A9A0025240F /* PerfilViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PerfilViewController.xib; sourceTree = "<group>"; };
@@ -122,7 +122,7 @@
 		B743C3A22B15533A002A4A38 /* Salud */ = {
 			isa = PBXGroup;
 			children = (
-				B7E8F3382B1AC1EE0087740D /* GoogleService-Info.plist */,
+				B73C1FFD2B1C055E0085AEF2 /* GoogleService-Info.plist */,
 				B743C3A32B15533A002A4A38 /* AppDelegate.swift */,
 				B743C3A52B15533A002A4A38 /* SceneDelegate.swift */,
 				B743C3A72B15533A002A4A38 /* AuthViewController.swift */,
@@ -248,7 +248,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				B743C3B32B15533B002A4A38 /* LaunchScreen.storyboard in Resources */,
-				B7E8F3392B1AC1EE0087740D /* GoogleService-Info.plist in Resources */,
 				B743C3BF2B158E40002A4A38 /* HomeViewController.xib in Resources */,
 				B71FBF062B1B9AA100547DEE /* MedicamentoInfoViewController.xib in Resources */,
 				B743C3B02B15533B002A4A38 /* Assets.xcassets in Resources */,
@@ -256,6 +255,7 @@
 				B7EAC5212B180A9A0025240F /* PerfilViewController.xib in Resources */,
 				B7EAC5252B1817310025240F /* TiendaViewController.xib in Resources */,
 				B743C3AB2B15533A002A4A38 /* Main.storyboard in Resources */,
+				B73C1FFE2B1C055E0085AEF2 /* GoogleService-Info.plist in Resources */,
 				B7EAC52B2B1841C80025240F /* MyCustomCollectionViewCell.xib in Resources */,
 				B7421DF62B1BAE9E00E8654C /* PagoViewController.xib in Resources */,
 			);
