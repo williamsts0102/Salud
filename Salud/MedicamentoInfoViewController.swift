@@ -22,6 +22,7 @@ class MedicamentoInfoViewController: UIViewController {
     @IBOutlet weak var contraEntregaButton: UIButton!
     @IBOutlet weak var enLineaButton: UIButton!
     
+    var id:Int?
     var imagen: String?
     var nombre: String?
     var descripcion: String?
@@ -55,18 +56,9 @@ class MedicamentoInfoViewController: UIViewController {
     
     
     @IBAction func contraEntregaButtonAction(_ sender: UIButton) {
-        // Obtén el nombre del usuario y el nombre del medicamento
-            let nombreUsuario = "Nombre del Usuario"  // Reemplaza con la lógica para obtener el nombre del usuario
-            let nombreMedicamento = userEmail ?? "Nombre Desconocido"
-
-            // Construye el mensaje personalizado
-            let message = "\(nombreUsuario), tu \(nombreMedicamento) está listo! Repartidor en camino. Prepara pago y comparte ubicación. Gracias"
-
-            let phoneNumber = "+51945714598"
-
-            let parameters: [String: Any] = [
-                "phone_number": phoneNumber,
-                "message": message
+        let parameters: [String: Any] = [
+                "email": userEmail,
+                "id": id
             ]
 
             // Realiza la solicitud a la API
@@ -75,10 +67,19 @@ class MedicamentoInfoViewController: UIViewController {
                 .responseJSON { response in
                     switch response.result {
                     case .success:
-                        // Muestra un cuadro de diálogo con el mensaje personalizado
-                        self.mostrarAlertaContigoEnUnosSegundos()
+                        // Maneja la respuesta de la API
+                        if let jsonResponse = try? response.result.get() as? [String: Any],
+                           let message = jsonResponse["message"] as? String {
+                            // Muestra un cuadro de diálogo con el mensaje personalizado
+                            self.mostrarAlertaConMensaje(message)
+                        } else {
+                            // Respuesta inesperada del servidor
+                            self.mostrarAlertaConMensaje("Respuesta inesperada del servidor")
+                        }
                     case .failure(let error):
+                        // Muestra detalles del error en caso de fallo
                         print("Error en la solicitud: \(error)")
+                        self.mostrarAlertaConMensaje("Error en la solicitud: \(error.localizedDescription)")
                     }
                 }
     }
@@ -87,18 +88,25 @@ class MedicamentoInfoViewController: UIViewController {
     @IBAction func enLineaButtonAction(_ sender: UIButton) {
     }
     
-    func mostrarAlertaContigoEnUnosSegundos() {
-        let message = "En unos segundos nos comunicaremos contigo"
+    func mostrarAlertaConMensaje(_ message: String) {
         let alertController = UIAlertController(title: "Mensaje", message: message, preferredStyle: .alert)
-        let okAction = UIAlertAction(title: "OK", style: .default) { _ in
-            // Cuando el usuario presiona "OK", cierra la vista actual y navega a TiendaViewController
-            self.dismiss(animated: true) {
-                if let tiendaViewController = self.navigationController?.viewControllers.first(where: { $0 is TiendaViewController }) as? TiendaViewController {
-                    self.navigationController?.popToViewController(tiendaViewController, animated: true)
+            let okAction = UIAlertAction(title: "OK", style: .default) { _ in
+                // Cuando el usuario presiona "OK", decide a qué vista navegar
+                self.dismiss(animated: true) {
+                    if message == "En unos segundos nos comunicaremos contigo" {
+                        // Navega a TiendaViewController
+                        if let tiendaViewController = self.navigationController?.viewControllers.first(where: { $0 is TiendaViewController }) as? TiendaViewController {
+                            self.navigationController?.popToViewController(tiendaViewController, animated: true)
+                        }
+                    } else {
+                        // Navega a PerfilViewController
+                        if let perfilViewController = self.navigationController?.viewControllers.first(where: { $0 is PerfilViewController }) as? PerfilViewController {
+                            self.navigationController?.popToViewController(perfilViewController, animated: true)
+                        }
+                    }
                 }
             }
-        }
-        alertController.addAction(okAction)
-        present(alertController, animated: true, completion: nil)
+            alertController.addAction(okAction)
+            present(alertController, animated: true, completion: nil)
     }
 }

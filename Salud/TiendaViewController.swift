@@ -21,8 +21,8 @@ class TiendaViewController: UIViewController {
     
     private let myCellWidth = UIScreen.main.bounds.width / 2.5
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
         title = "Tienda"
         fetchDataFromAPI()
         collectionView.dataSource = self
@@ -113,6 +113,7 @@ extension TiendaViewController: UICollectionViewDelegate{
 
         let medicamentoInfoVC = MedicamentoInfoViewController()
 
+        medicamentoInfoVC.id = medicamento.id
         medicamentoInfoVC.imagen = medicamento.imagen
         medicamentoInfoVC.nombre = medicamento.nombre
         medicamentoInfoVC.descripcion = medicamento.descripcion
