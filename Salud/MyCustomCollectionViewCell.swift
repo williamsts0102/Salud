@@ -16,7 +16,7 @@ class MyCustomCollectionViewCell: UICollectionViewCell {
         super.awakeFromNib()
         
         backgroundColor = .lightGray
-        myFirstLabel.font = UIFont.boldSystemFont(ofSize: 20)
+        myFirstLabel.font = UIFont.boldSystemFont(ofSize: 14)
         myFirstLabel.textColor = .blue
     }
 

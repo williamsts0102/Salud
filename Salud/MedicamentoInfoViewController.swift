@@ -88,6 +88,15 @@ class MedicamentoInfoViewController: UIViewController {
     @IBAction func enLineaButtonAction(_ sender: UIButton) {
     }
     
+    @IBAction func AgregarAlCarrito(_ sender: UIButton) {
+
+        let viewToPresent = CarritoVC(nibName: "CarritoVC", bundle: nil)
+        viewToPresent.nombre = nombre ?? ""
+                self.present(viewToPresent, animated: true, completion: nil)
+
+    }
+    
+    
     func mostrarAlertaConMensaje(_ message: String) {
         let alertController = UIAlertController(title: "Mensaje", message: message, preferredStyle: .alert)
             let okAction = UIAlertAction(title: "OK", style: .default) { _ in

@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7CC4C79E2B1C2CAC00322E9C /* CarritoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CC4C79C2B1C2CAC00322E9C /* CarritoVC.swift */; };
+		7CC4C79F2B1C2CAC00322E9C /* CarritoVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7CC4C79D2B1C2CAC00322E9C /* CarritoVC.xib */; };
+		7CC4C7A22B1C2E8900322E9C /* ItemCarritoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CC4C7A02B1C2E8900322E9C /* ItemCarritoTableViewCell.swift */; };
+		7CC4C7A32B1C2E8900322E9C /* ItemCarritoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7CC4C7A12B1C2E8900322E9C /* ItemCarritoTableViewCell.xib */; };
 		9FD45595FEF3C407624692AA /* Pods_Salud.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E33CB13F90CB213D10E9BF0 /* Pods_Salud.framework */; };
 		B71FBF002B1B918F00547DEE /* EditPerfilViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B71FBEFF2B1B918F00547DEE /* EditPerfilViewController.xib */; };
 		B71FBF022B1B943500547DEE /* EditPerfilViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B71FBF012B1B943500547DEE /* EditPerfilViewController.swift */; };
@@ -41,6 +45,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7CC4C79C2B1C2CAC00322E9C /* CarritoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarritoVC.swift; sourceTree = "<group>"; };
+		7CC4C79D2B1C2CAC00322E9C /* CarritoVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CarritoVC.xib; sourceTree = "<group>"; };
+		7CC4C7A02B1C2E8900322E9C /* ItemCarritoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemCarritoTableViewCell.swift; sourceTree = "<group>"; };
+		7CC4C7A12B1C2E8900322E9C /* ItemCarritoTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ItemCarritoTableViewCell.xib; sourceTree = "<group>"; };
 		9E33CB13F90CB213D10E9BF0 /* Pods_Salud.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Salud.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		ABDA659AA0C15E2A0DF319BE /* Pods-Salud.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Salud.debug.xcconfig"; path = "Target Support Files/Pods-Salud/Pods-Salud.debug.xcconfig"; sourceTree = "<group>"; };
 		AC8D4B0D09A9F23E4A53EEE4 /* Pods-Salud.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Salud.release.xcconfig"; path = "Target Support Files/Pods-Salud/Pods-Salud.release.xcconfig"; sourceTree = "<group>"; };
@@ -145,6 +153,10 @@
 				B71FBF042B1B9AA100547DEE /* MedicamentoInfoViewController.xib */,
 				B7421DF32B1BAE9E00E8654C /* PagoViewController.swift */,
 				B7421DF42B1BAE9E00E8654C /* PagoViewController.xib */,
+				7CC4C79C2B1C2CAC00322E9C /* CarritoVC.swift */,
+				7CC4C79D2B1C2CAC00322E9C /* CarritoVC.xib */,
+				7CC4C7A02B1C2E8900322E9C /* ItemCarritoTableViewCell.swift */,
+				7CC4C7A12B1C2E8900322E9C /* ItemCarritoTableViewCell.xib */,
 			);
 			path = Salud;
 			sourceTree = "<group>";
@@ -258,6 +270,8 @@
 				B73C1FFE2B1C055E0085AEF2 /* GoogleService-Info.plist in Resources */,
 				B7EAC52B2B1841C80025240F /* MyCustomCollectionViewCell.xib in Resources */,
 				B7421DF62B1BAE9E00E8654C /* PagoViewController.xib in Resources */,
+				7CC4C7A32B1C2E8900322E9C /* ItemCarritoTableViewCell.xib in Resources */,
+				7CC4C79F2B1C2CAC00322E9C /* CarritoVC.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -317,6 +331,7 @@
 				B743C3A82B15533A002A4A38 /* AuthViewController.swift in Sources */,
 				B7EAC5232B180AD80025240F /* PerfilViewController.swift in Sources */,
 				B7E8F3432B1ADA480087740D /* SuccessGetUser.swift in Sources */,
+				7CC4C79E2B1C2CAC00322E9C /* CarritoVC.swift in Sources */,
 				B743C3A42B15533A002A4A38 /* AppDelegate.swift in Sources */,
 				B71FBF052B1B9AA100547DEE /* MedicamentoInfoViewController.swift in Sources */,
 				B743C3A62B15533A002A4A38 /* SceneDelegate.swift in Sources */,
@@ -325,6 +340,7 @@
 				B71FBF102B1BBAF000547DEE /* SuccessUpdateUser.swift in Sources */,
 				B7EAC52A2B1841C80025240F /* MyCustomCollectionViewCell.swift in Sources */,
 				B71FBF022B1B943500547DEE /* EditPerfilViewController.swift in Sources */,
+				7CC4C7A22B1C2E8900322E9C /* ItemCarritoTableViewCell.swift in Sources */,
 				B7421DF52B1BAE9E00E8654C /* PagoViewController.swift in Sources */,
 				B743C3AE2B15533A002A4A38 /* Salud.xcdatamodeld in Sources */,
 				B7EAC52D2B187BFD0025240F /* SuccessListMedicamento.swift in Sources */,
