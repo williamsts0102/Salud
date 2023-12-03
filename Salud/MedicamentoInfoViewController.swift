@@ -90,23 +90,23 @@ class MedicamentoInfoViewController: UIViewController {
     
     func mostrarAlertaConMensaje(_ message: String) {
         let alertController = UIAlertController(title: "Mensaje", message: message, preferredStyle: .alert)
-            let okAction = UIAlertAction(title: "OK", style: .default) { _ in
-                // Cuando el usuario presiona "OK", decide a qué vista navegar
-                self.dismiss(animated: true) {
-                    if message == "En unos segundos nos comunicaremos contigo" {
-                        // Navega a TiendaViewController
-                        if let tiendaViewController = self.navigationController?.viewControllers.first(where: { $0 is TiendaViewController }) as? TiendaViewController {
-                            self.navigationController?.popToViewController(tiendaViewController, animated: true)
-                        }
-                    } else {
-                        // Navega a PerfilViewController
-                        if let perfilViewController = self.navigationController?.viewControllers.first(where: { $0 is PerfilViewController }) as? PerfilViewController {
-                            self.navigationController?.popToViewController(perfilViewController, animated: true)
-                        }
+        let okAction = UIAlertAction(title: "OK", style: .default) { _ in
+            // Cuando el usuario presiona "OK", decide a qué vista navegar
+            self.dismiss(animated: true) {
+                if message == "En unos segundos nos comunicaremos contigo" {
+                    // Navega a TiendaViewController
+                    if let tiendaViewController = self.navigationController?.viewControllers.first(where: { $0 is TiendaViewController }) as? TiendaViewController {
+                        self.navigationController?.popToViewController(tiendaViewController, animated: true)
+                    }
+                } else {
+                    // Navega a PerfilViewController
+                    if let perfilViewController = self.navigationController?.viewControllers.first(where: { $0 is PerfilViewController }) as? PerfilViewController {
+                        self.navigationController?.popToViewController(perfilViewController, animated: true)
                     }
                 }
             }
-            alertController.addAction(okAction)
-            present(alertController, animated: true, completion: nil)
+        }
+        alertController.addAction(okAction)
+        present(alertController, animated: true, completion: nil)
     }
 }
